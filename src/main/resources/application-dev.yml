@@ -1,0 +1,20 @@
+server:
+  port: 8082
+
+spring:
+  datasource:
+    username: root
+    password: Aa123456
+    url: jdbc:mysql://localhost:3306/tablename?useUnicode=true&characterEncoding=utf-8&useSSL=false&serverTimezone=UTC
+  thymeleaf:
+    cache: false
+    prefix: classpath:/templates/
+    suffix: .html
+    encoding: utf-8
+    mode: html5
+    servlet:
+      content-type: text/html
+
+mybatis:
+  mapper-locations: classpath:mapping/*mapping.xml
+  type-aliases-package: shorturl.demo.entity
